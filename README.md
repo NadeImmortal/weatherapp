@@ -32,18 +32,3 @@ Secure API Handling: API keys are separated into a config file (git-ignored) for
 
 The project follows a clean, scalable architecture separating logic from UI:
 
-lib/
-├── models/
-│   └── weather_model.dart       # JSON parsing logic
-├── providers/
-│   └── weather_provider.dart    # State Management (Search, Favorites, Settings)
-├── screens/
-│   ├── home_screen.dart         # Search & Favorites List
-│   ├── details_screen.dart      # Detailed weather view with dynamic backgrounds
-│   └── settings_screen.dart     # Unit toggle
-├── services/
-│   └── api_service.dart         # HTTP calls to OpenWeatherMap
-├── widgets/
-│   └── glass_card.dart          # Reusable frosted glass UI component
-├── config.dart                  # (Ignored by Git) Stores API Key
-└── main.dart                    # Entry point & Theme setup
